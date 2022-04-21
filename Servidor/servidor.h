@@ -15,6 +15,12 @@ public:
     Servidor(QWidget *parent = nullptr);
     ~Servidor();
 
+private slots:
+
+    void on_player1GetName_returnPressed();
+
+    void on_player2GetName_returnPressed();
+
 private:
     Ui::Servidor *ui;
 };
