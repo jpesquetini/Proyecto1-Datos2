@@ -1,0 +1,5 @@
+C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/CMakeFiles/Servidor.dir
+C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/CMakeFiles/Servidor_autogen_timestamp_deps.dir
+C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/CMakeFiles/Servidor_autogen.dir

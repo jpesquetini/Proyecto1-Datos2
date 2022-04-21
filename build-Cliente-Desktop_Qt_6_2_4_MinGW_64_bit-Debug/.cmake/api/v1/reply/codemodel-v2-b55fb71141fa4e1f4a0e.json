@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Cliente",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Cliente::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cliente-Debug-6a2d389be82829feacf6.json",
+					"name" : "Cliente",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Cliente_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cliente_autogen-Debug-bbfc7aa37e7bdeed9789.json",
+					"name" : "Cliente_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Cliente_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cliente_autogen_timestamp_deps-Debug-380ff145bffa7f8879f7.json",
+					"name" : "Cliente_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Cliente-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+		"source" : "C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/Cliente"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
