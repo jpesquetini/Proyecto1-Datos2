@@ -1,13 +1,10 @@
 #ifndef SERVER_H
 #define SERVER_H
-
 #include <QMainWindow>
-
-#include <QTcpServer>
-#include <QTcpSocket>//>
-
-#include <QTcpServer>
 #include <Qt>
+
+#include <QTcpServer>
+#include <QTcpSocket>
 
 #include <vector>
 #include <string>
@@ -31,15 +28,11 @@ private slots:
 
     void on_player2GetName_returnPressed();
 
-    void recentConnection();
-
-    void readSocket();
-
-    void sendInfo(const char *image);
-
-    void on_prueba_clicked();
-
     void createMatrix();
+
+    void conexion_nueva();
+
+    void leer_socket();
 
 private:
     Ui::Server *ui;

@@ -49,14 +49,13 @@ public:
     QPushButton *button16;
     QPushButton *button12;
     QPushButton *button25;
-    QPushButton *compareCards;
     QMenuBar *menubar;
 
     void setupUi(QMainWindow *Client)
     {
         if (Client->objectName().isEmpty())
             Client->setObjectName(QString::fromUtf8("Client"));
-        Client->resize(760, 583);
+        Client->resize(760, 534);
         centralwidget = new QWidget(Client);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         button23 = new QPushButton(centralwidget);
@@ -198,13 +197,6 @@ public:
         button25->setGeometry(QRect(510, 170, 100, 100));
         button25->setIcon(icon);
         button25->setIconSize(QSize(100, 100));
-        compareCards = new QPushButton(centralwidget);
-        compareCards->setObjectName(QString::fromUtf8("compareCards"));
-        compareCards->setGeometry(QRect(330, 530, 101, 31));
-        QFont font2;
-        font2.setPointSize(16);
-        font2.setBold(true);
-        compareCards->setFont(font2);
         Client->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Client);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -244,7 +236,6 @@ public:
         button16->setText(QString());
         button12->setText(QString());
         button25->setText(QString());
-        compareCards->setText(QCoreApplication::translate("Client", "Compare", nullptr));
     } // retranslateUi
 
 };

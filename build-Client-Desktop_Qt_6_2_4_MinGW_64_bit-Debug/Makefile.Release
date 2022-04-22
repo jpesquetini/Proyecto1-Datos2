@@ -550,6 +550,7 @@ release/client.o: ../Client/client.cpp ../Client/client.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		ui_client.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \

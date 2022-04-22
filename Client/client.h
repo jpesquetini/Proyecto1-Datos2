@@ -17,9 +17,9 @@ public:
     Client(QWidget *parent = nullptr);
     ~Client();
 
-    void readSocket();
-
 private slots:
+
+    void leer();
 
     void on_button11_clicked();
 

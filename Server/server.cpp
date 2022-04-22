@@ -2,23 +2,39 @@
 #include "./ui_server.h"
 #include "card.h"
 
-#include <QFile>
-
 #include <vector>
 #include <algorithm>
 #include <iostream>
 using namespace std;
 
 Server::Server(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::Server)
+    : QMainWindow(parent),
+    ui(new Ui::Server)
 {
     ui->setupUi(this);
+
     mServer = new QTcpServer(this);
     mServer->listen(QHostAddress::Any, 2000);
     mSocket = new QTcpSocket(this);
 
-    connect(mServer, SIGNAL(newConnection()), this, SLOT(recentConnection()));
+    connect(mServer, &QTcpServer::newConnection, this, &Server::conexion_nueva);
+}
+
+void Server::conexion_nueva(){
+
+    mSocket = mServer->nextPendingConnection();
+
+    connect(mSocket, &QAbstractSocket::connected, this, &Server::leer_socket);
+
+    qDebug() << "CONECTADOS!!!!!!!";
+}
+
+void Server::leer_socket(){
+    qDebug() << "SSSSIIIIIUUUUU";
+    QByteArray buffer;
+    buffer.resize(mSocket->bytesAvailable());
+    mSocket->read(buffer.data(), buffer.size());
+    qDebug() << QString(buffer.data());
 }
 
 Server::~Server(){
@@ -33,29 +49,6 @@ void Server::on_player1GetName_returnPressed(){
 void Server::on_player2GetName_returnPressed(){
     QString player2Name = ui->player2GetName->text();
     ui->player2Name->setText(player2Name + "'s" + " Score:");
-}
-
-void Server::recentConnection(){
-    mSocket = mServer->nextPendingConnection();
-    connect(mSocket, SIGNAL(readyRead()), this, SLOT(readSocket()));
-}
-
-void Server::readSocket(){
-    QByteArray buffer;
-    buffer.resize(mSocket->bytesAvailable());
-    mSocket->read(buffer.data(), buffer.size());
-    qDebug() << QString(buffer);
-}
-
-void Server::sendInfo(const char *image){
-    mSocket->write(image);
-}
-
-void Server::on_prueba_clicked(){
-    // QString hola = "hola";
-    // mSocket->write(hola.toLatin1().data(), hola.size());
-
-    createMatrix();
 }
 
 void Server::createMatrix(){
@@ -79,4 +72,7 @@ void Server::createMatrix(){
         i++;
     }
 }
+
+
+
 

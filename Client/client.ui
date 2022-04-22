@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>760</width>
-    <height>583</height>
+    <height>534</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -622,25 +622,6 @@
       <width>100</width>
       <height>100</height>
      </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="compareCards">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>530</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Compare</string>
     </property>
    </widget>
   </widget>

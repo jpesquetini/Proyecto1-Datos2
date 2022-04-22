@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Server_t {
-    const uint offsetsAndSize[22];
-    char stringdata0[158];
+    const uint offsetsAndSize[14];
+    char stringdata0[112];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_Server_t, stringdata0) + ofs), len 
@@ -33,20 +33,14 @@ QT_MOC_LITERAL(0, 6), // "Server"
 QT_MOC_LITERAL(7, 31), // "on_player1GetName_returnPressed"
 QT_MOC_LITERAL(39, 0), // ""
 QT_MOC_LITERAL(40, 31), // "on_player2GetName_returnPressed"
-QT_MOC_LITERAL(72, 16), // "recentConnection"
-QT_MOC_LITERAL(89, 10), // "readSocket"
-QT_MOC_LITERAL(100, 8), // "sendInfo"
-QT_MOC_LITERAL(109, 11), // "const char*"
-QT_MOC_LITERAL(121, 5), // "image"
-QT_MOC_LITERAL(127, 17), // "on_prueba_clicked"
-QT_MOC_LITERAL(145, 12) // "createMatrix"
+QT_MOC_LITERAL(72, 12), // "createMatrix"
+QT_MOC_LITERAL(85, 14), // "conexion_nueva"
+QT_MOC_LITERAL(100, 11) // "leer_socket"
 
     },
     "Server\0on_player1GetName_returnPressed\0"
     "\0on_player2GetName_returnPressed\0"
-    "recentConnection\0readSocket\0sendInfo\0"
-    "const char*\0image\0on_prueba_clicked\0"
-    "createMatrix"
+    "createMatrix\0conexion_nueva\0leer_socket"
 };
 #undef QT_MOC_LITERAL
 
@@ -56,7 +50,7 @@ static const uint qt_meta_data_Server[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -64,20 +58,16 @@ static const uint qt_meta_data_Server[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   56,    2, 0x08,    1 /* Private */,
-       3,    0,   57,    2, 0x08,    2 /* Private */,
-       4,    0,   58,    2, 0x08,    3 /* Private */,
-       5,    0,   59,    2, 0x08,    4 /* Private */,
-       6,    1,   60,    2, 0x08,    5 /* Private */,
-       9,    0,   63,    2, 0x08,    7 /* Private */,
-      10,    0,   64,    2, 0x08,    8 /* Private */,
+       1,    0,   44,    2, 0x08,    1 /* Private */,
+       3,    0,   45,    2, 0x08,    2 /* Private */,
+       4,    0,   46,    2, 0x08,    3 /* Private */,
+       5,    0,   47,    2, 0x08,    4 /* Private */,
+       6,    0,   48,    2, 0x08,    5 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -92,14 +82,13 @@ void Server::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         switch (_id) {
         case 0: _t->on_player1GetName_returnPressed(); break;
         case 1: _t->on_player2GetName_returnPressed(); break;
-        case 2: _t->recentConnection(); break;
-        case 3: _t->readSocket(); break;
-        case 4: _t->sendInfo((*reinterpret_cast< std::add_pointer_t<const char*>>(_a[1]))); break;
-        case 5: _t->on_prueba_clicked(); break;
-        case 6: _t->createMatrix(); break;
+        case 2: _t->createMatrix(); break;
+        case 3: _t->conexion_nueva(); break;
+        case 4: _t->leer_socket(); break;
         default: ;
         }
     }
+    (void)_a;
 }
 
 const QMetaObject Server::staticMetaObject = { {
@@ -110,7 +99,7 @@ const QMetaObject Server::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_Server_t
 , QtPrivate::TypeAndForceComplete<Server, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const char *, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -137,13 +126,13 @@ int Server::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 5;
     }
     return _id;
 }
