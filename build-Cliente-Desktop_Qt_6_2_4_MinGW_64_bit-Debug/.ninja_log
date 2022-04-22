@@ -1,9 +1,0 @@
-# ninja log v5
-23	1567	6722887338197514	Cliente_autogen/timestamp	ff16d12803365a63
-2730	9033	6722859849606426	CMakeFiles/Cliente.dir/Cliente_autogen/mocs_compilation.cpp.obj	277658b2ffe56046
-2739	9506	6722859854486408	CMakeFiles/Cliente.dir/main.cpp.obj	c739578bc246a5b2
-23	1567	6722887338197514	Cliente_autogen/mocs_compilation.cpp	ff16d12803365a63
-23	1567	6722887338197514	C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Cliente-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/Cliente_autogen/mocs_compilation.cpp	ff16d12803365a63
-6967	7407	6722887396548380	Cliente.exe	49f03f7e118060a3
-23	1567	6722887338197514	C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Cliente-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/Cliente_autogen/timestamp	ff16d12803365a63
-1597	6966	6722887392218403	CMakeFiles/Cliente.dir/cliente.cpp.obj	6812c58cac8244bc
