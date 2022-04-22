@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Servidor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Servidor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Servidor-Debug-068439c1d70cd8462cb8.json",
+					"name" : "Servidor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Servidor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Servidor_autogen-Debug-df8be2be11b745fd2cda.json",
+					"name" : "Servidor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Servidor_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Servidor_autogen_timestamp_deps-Debug-df1916a3f6066eccf2c8.json",
+					"name" : "Servidor_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/build-Servidor-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+		"source" : "C:/Users/jpesq/Documents/GitHub/Proyecto1-Datos2/Servidor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
